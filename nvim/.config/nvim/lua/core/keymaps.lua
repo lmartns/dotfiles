@@ -78,4 +78,14 @@ end
 
 keymap.set("n", "<leader>cx", toggle_checklist, { desc = "Alternar checklist do Markdown" })
 
-keymap.set("n", "<leader>fn", "<cmd>enew<CR>", { desc = "Novo arquivo (em branco)" })
+keymap.set("n", "<leader>fn", "<cmd>enew<CR>", { desc = "New file" })
+
+keymap.set("n", "<leader>yp", function()
+  local file_path = vim.fn.expand("%:p")
+  vim.fn.setreg("+", file_path)
+end, { desc = "Copy path" })
+
+keymap.set("n", "<leader>yr", function()
+  local relative_path = vim.fn.expand("%")
+  vim.fn.setreg("+", relative_path)
+end, { desc = "Copy relative_path" })
