@@ -18,6 +18,7 @@ return {
     "gopls",
     "rust-analyzer",
     "svelteserver",
+    "tailwindcss",
   },
 
   config = function()

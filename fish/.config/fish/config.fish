@@ -2,6 +2,7 @@ if status is-interactive
     set -gx PATH $HOME/.local/share/fnm $PATH
     set -Ux PATH $PATH /Users/leo/.local/bin
     set PATH /Users/leo/.local/bin $PATH
+    set -Ux PATH /opt/homebrew/opt/openjdk/bin $PATH
 
     set fish_greeting
     fnm env --use-on-cd | source
