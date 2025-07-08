@@ -4,6 +4,6 @@ return {
   lazy = false,
   priority = 1000,
   config = function()
-    require("core.theme").load()
+    require("catppuccin").setup({})
   end,
 }

@@ -89,3 +89,19 @@ keymap.set("n", "<leader>yr", function()
   local relative_path = vim.fn.expand("%")
   vim.fn.setreg("+", relative_path)
 end, { desc = "Copy relative_path" })
+
+keymap.set("n", "<leader>tc", function()
+  require("telescope.builtin").colorscheme({
+    enable_preview = true,
+    -- Ação customizada ao pressionar Enter
+    attach_mappings = function(prompt_bufnr, map)
+      map("i", "<CR>", function()
+        local selection = require("telescope.actions.state").get_selected_entry()
+        require("telescope.actions").close(prompt_bufnr)
+        -- Chama nossa função para definir e salvar o tema
+        require("core.theme").set(selection.value)
+      end)
+      return true
+    end,
+  })
+end, { desc = "Trocar Tema (Salvar)" })

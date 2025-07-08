@@ -1,5 +1,6 @@
 require("core")
 require("lazy-setup")
+require("core.theme").load()
 
 vim.diagnostic.config({
   virtual_text = true,
