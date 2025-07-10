@@ -55,29 +55,6 @@ keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 keymap.set("n", "<leader>wr", "<cmd>SessionRestore<CR>", { desc = "Restore session for cwd" })
 keymap.set("n", "<leader>ws", "<cmd>SessionSave<CR>", { desc = "Save session for auto session root dir" })
 
-local function toggle_checklist()
-  local line = vim.api.nvim_get_current_line()
-  local modified = false
-
-  local new_line, count1 = line:gsub("%- %[ %]", "- [x]", 1)
-  if count1 > 0 then
-    modified = true
-  end
-
-  if not modified then
-    new_line, count2 = line:gsub("%- %[x%]", "- [ ]", 1)
-    if count2 > 0 then
-      modified = true
-    end
-  end
-
-  if modified then
-    vim.api.nvim_set_current_line(new_line)
-  end
-end
-
-keymap.set("n", "<leader>cx", toggle_checklist, { desc = "Alternar checklist do Markdown" })
-
 keymap.set("n", "<leader>fn", "<cmd>enew<CR>", { desc = "New file" })
 
 keymap.set("n", "<leader>yp", function()
@@ -93,15 +70,14 @@ end, { desc = "Copy relative_path" })
 keymap.set("n", "<leader>tc", function()
   require("telescope.builtin").colorscheme({
     enable_preview = true,
-    -- Ação customizada ao pressionar Enter
     attach_mappings = function(prompt_bufnr, map)
       map("i", "<CR>", function()
         local selection = require("telescope.actions.state").get_selected_entry()
         require("telescope.actions").close(prompt_bufnr)
-        -- Chama nossa função para definir e salvar o tema
         require("core.theme").set(selection.value)
       end)
       return true
     end,
   })
 end, { desc = "Trocar Tema (Salvar)" })
+

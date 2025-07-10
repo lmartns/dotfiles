@@ -9,6 +9,11 @@ if status is-interactive
     starship init fish | source
     zoxide init fish | source
 
+    alias cat="bat --paging=never"
+    alias ls="eza --icons --color=always"
+    alias ll="eza -lah --icons --color=always"
+    alias la="eza -a --icons --color=always"
+
     set -g fish_history_max 10000
     set -g fish_history_ignore_space yes
     
