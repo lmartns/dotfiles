@@ -37,3 +37,7 @@ if status is-interactive
     set -gx LANG en_US.UTF-8
     set -gx LC_ALL en_US.UTF-8
 end
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+set --export --prepend PATH "/home/leo/.rd/bin"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
