@@ -10,6 +10,7 @@ local available_themes = {
   "gruvbox",
   "nord",
   "miasma",
+  "neosolarazide",
 }
 
 function M.set(theme)

@@ -25,4 +25,8 @@ return {
     "xero/miasma.nvim",
     lazy = false,
   },
+  {
+    "Tsuzat/NeoSolarized.nvim",
+    lazy = false,
+  },
 }
