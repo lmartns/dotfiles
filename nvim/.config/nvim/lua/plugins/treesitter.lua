@@ -43,11 +43,7 @@ return {
           node_decremental = "<bs>",
         },
       },
-      -- Campos obrigatórios adicionados
-      modules = {},
-      sync_install = false,
-      ignore_install = {},
-      auto_install = true,
+      
     })
   end,
 }

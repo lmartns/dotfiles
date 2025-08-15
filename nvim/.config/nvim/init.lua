@@ -14,11 +14,7 @@ vim.diagnostic.config({
 vim.o.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
 
-vim.cmd([[
-  highlight Normal gui=bold cterm=bold
-  highlight Comment gui=italic cterm=italic
-  highlight Function gui=bold cterm=bold
-]])
+
 
 vim.g.neovide_input_use_logo = true
 

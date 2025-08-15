@@ -18,8 +18,12 @@ return {
       -- Hooks to run after opening a workspace
       hooks = {
         open = {
-          "Telescope find_files", -- open file finder
-          "Telescope live_grep", -- open text search
+          function()
+            pcall(vim.cmd, "Telescope find_files")
+          end,
+          function()
+            pcall(vim.cmd, "Telescope live_grep")
+          end,
         },
       },
 
