@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export --path PATH:/opt/homebrew/opt/openjdk/bin\x1e/Users/leo/\x2elocal/bin\x1e/home/leo/\x2elocal/share/fnm\x1e/home/leo/\x2ecargo/bin\x1e/home/leo/\x2erd/bin\x1e/run/user/1000/fnm_multishells/46100_1753989508833/bin\x1e/home/leo/\x2elocal/share/fnm\x1e/home/leo/\x2erd/bin\x1e/home/leo/\x2erd/bin\x1e/run/user/1000/fnm_multishells/3591_1753963015297/bin\x1e/home/leo/\x2elocal/share/fnm\x1e/home/leo/\x2elocal/bin\x1e/home/leo/bin\x1e/usr/local/bin\x1e/usr/bin
+SETUVAR --export --path PATH:/Users/leo/\x2elocal/share/fnm\x1e/Users/leo/\x2ecargo/bin\x1e/opt/homebrew/bin\x1e/home/leo/\x2ecargo/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Library/Apple/usr/bin\x1e/Applications/kitty\x2eapp/Contents/MacOS\x1e/Users/leo/\x2elocal/bin
 SETUVAR __fish_initialized:3800
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_comment:red
@@ -26,4 +26,4 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/leo/\x2ecargo/bin
+SETUVAR fish_user_paths:/opt/homebrew/bin\x1e/home/leo/\x2ecargo/bin
