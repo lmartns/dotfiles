@@ -11,6 +11,8 @@ return {
         "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
+        "svelte-language-server",
+        "tree-sitter-cli",
       })
     end,
   },

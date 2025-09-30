@@ -1,6 +1,6 @@
 return {
   {
-    "rebelot/kanagawa.nvim",
+    "sainnhe/everforest",
     lazy = true,
     priority = 1000,
   },

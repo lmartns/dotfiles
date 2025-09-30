@@ -20,6 +20,11 @@ return {
         "scss",
         "sql",
         "svelte",
+        "html",
+        "tsx",
+        "typescript",
+        "javascript",
+        "jsx",
       },
 
       query_linter = {
@@ -48,7 +53,7 @@ return {
       },
     },
     config = function(_, opts)
-      require("nvim-treesitter.configs").setup(opts)
+      require("nvim-treesitter").setup(opts)
 
       vim.filetype.add({
         extension = {
