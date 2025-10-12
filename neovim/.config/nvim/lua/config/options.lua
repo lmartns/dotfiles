@@ -28,11 +28,9 @@ vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
 vim.opt.wildignore:append({ "*/node_modules/*" })
 vim.opt.mouse = ""
 vim.opt.signcolumn = "yes:1"
--- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
--- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
 
 vim.cmd([[au BufNewFile,BufRead *.astro setf astro]])
@@ -42,12 +40,11 @@ if vim.fn.has("nvim-0.8") == 1 then
   vim.opt.cmdheight = 0
 end
 
--- File types
 vim.filetype.add({
   extension = {
     mdx = "mdx",
   },
 })
 
-vim.g.lazyvim_prettier_needs_config = true
+vim.g.lazyvim_prettier_needs_config = false
 vim.g.lazyvim_cmp = "blink.cmp"
