@@ -3,6 +3,8 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>tf", "<cmd>ToggleTerm direction=float<CR>", { desc = "Open floating terminal" })
+keymap.set("n", "<leader>th", "<cmd>ToggleTerm direction=horizontal<CR>", { desc = "Open horizontal terminal" })
+keymap.set("n", "<leader>tv", "<cmd>ToggleTerm direction=vertical<CR>", { desc = "Open vertical terminal" })
 keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to left split" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to lower split" })
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to upper split" })
