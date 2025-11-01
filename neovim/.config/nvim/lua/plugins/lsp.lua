@@ -22,6 +22,22 @@ return {
     opts = {
       inlay_hints = { enabled = false },
       servers = {
+        eslint = {
+          settings = {
+            workingDirectory = { mode = "auto" },
+            format = false,
+            options = {
+              ignorePatterns = {
+                "**/placeholder.js",
+                "**/*.placeholder.js",
+                "**/node_modules/**",
+                "**/.next/**",
+                "**/dist/**",
+                "**/build/**",
+              },
+            },
+          },
+        },
         cssls = {},
         tailwindcss = {
           root_dir = function(fname)
